@@ -9,7 +9,7 @@ resource "azurerm_subnet" "this" {
   name                 = "${var.name}-subnet"
   resource_group_name  = var.resource_group
   virtual_network_name = azurerm_virtual_network.this.name
-  address_prefixes     = [cidrsubnet(var.cidr_block, 8, 0)]  # adjust as needed
+  address_prefixes     = [cidrsubnet(var.cidr_block, 8, 1)] # adjust as needed
 }
 
 resource "azurerm_network_interface" "this" {
