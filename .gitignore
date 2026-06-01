@@ -1,8 +1,8 @@
-
-# Terraform
-.terraform/
+**/.terraform/
 *.tfstate
 *.tfstate.*
-.terraform.lock.hcl
-
-.terraform/
+crash.log
+./.terraform
+./environments/dev/.terraform
+./environments/prod/.terraform
+./environments/stage/.terraform
